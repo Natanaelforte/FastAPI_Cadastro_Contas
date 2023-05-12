@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException, status, Response, APIRouter
-from models import contas_request, contas_response
+from schemas.contas_schema import contas_request, contas_response
 
 
 # Exemplo de banco de dados
