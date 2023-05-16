@@ -2,7 +2,6 @@ from core.config import settings
 from sqlalchemy import Column, Integer, String, Float
 
 
-
 class contas_model(settings.DBBaseModel):
     __tablename__ = 'contas'
     __allow_unmapped__ = True

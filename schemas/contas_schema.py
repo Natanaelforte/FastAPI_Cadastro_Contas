@@ -2,21 +2,15 @@ from typing import Optional
 from pydantic import BaseModel as SCBaseModel
 
 
-class contas_response(SCBaseModel):
-    id = Optional[int]
-    descricao = str
-    valor = float
-    status = str
+class contas_schema(SCBaseModel):
+    id: int = Optional[int]
+    descricao: str = str
+    valor: float = float
+    status: str = str
 
     class Config:
+        arbitrary_types_allowed = True
         orm_mode = True
 
 
-class contas_request(SCBaseModel):
-    id = Optional[int]
-    descricao = str
-    valor = float
-    status = str
 
-    class Config:
-        orm_mode = True

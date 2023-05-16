@@ -8,7 +8,9 @@ class Settings(BaseSettings):
     DBBaseModel = declarative_base()
 
     class Config:
+        arbitrary_types_allowed = True
         case_sensitive = True
+
 
 
 settings = Settings()
