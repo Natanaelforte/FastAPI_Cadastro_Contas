@@ -3,7 +3,7 @@ from pydantic import BaseModel as SCBaseModel
 
 
 class contas_schema(SCBaseModel):
-    id: int = Optional[int]
+    id: Optional[int] = int
     descricao: str = str
     valor: float = float
     status: str = str
